@@ -358,6 +358,7 @@
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
+  text-align: center;
 }
 
 .flower-item .flower-info h3 {
@@ -384,10 +385,6 @@
 
 .flower-item .flower-buttons button:hover {
   box-shadow: 0 4px 30px rgba(251, 148, 143, 0.5);
-}
-
-.flower-item .flower-buttons button:last-child {
-  margin-left: 10px;
 }
 
 /* PRODUCTS END */
@@ -717,7 +714,7 @@ p {
 /* RESPONSIVE START */
 
 @media screen and (max-width: 1400px) {
-  .col-self-4 {
+  .col-md-self-4 {
     flex: 0 0 auto;
     width: 33.33333333%;
   }
@@ -739,7 +736,7 @@ p {
 }
 
 @media screen and (max-width: 992px) {
-  .col-self-6 {
+  .col-sm-self-6 {
     flex: 0 0 auto;
     width: 50%;
   }
@@ -789,5 +786,14 @@ p {
   }
   .navbar .buttons i {
     margin: 0 5px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .flower-item .flower-image{
+    height: 160px;
+  }
+  .flower-item .flower-info{
+    height: 150px;
   }
 }
