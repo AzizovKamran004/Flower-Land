@@ -215,12 +215,12 @@
 
 .hero .hero-text h1 {
   font-size: 75px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   font-weight: bold;
 }
 
 .hero .hero-text p {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .hero .hero-text a {
@@ -231,15 +231,50 @@
   width: 200px;
   text-decoration: none;
   background: rgba(195, 107, 132, 0.4);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(4px);
   padding: 15px;
+  margin-bottom: 20px;
   border-radius: 5px;
   transition: all 0.3s;
 }
 
 .hero .hero-text a:hover {
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+}
+
+.hero .hero-text .infos {
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.hero .hero-text .infos:hover {
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+}
+
+.hero .hero-text .infos .info-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  padding: 17px 10px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(4px);
+  transition: all 0.3s;
+}
+
+.hero .hero-text .infos .info-item:hover {
+  transform: scale(1.05);
+}
+
+.hero .hero-text .infos .info-item h4,
+.hero .hero-text .infos .info-item h2 {
+  color: #c36b84;
+  font-weight: bold;
+  font-size: 23px;
 }
 
 /* HERO END */
@@ -315,17 +350,22 @@
 
 .flower-item {
   position: relative;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   border-radius: 20px;
   transition: all 0.3s;
 }
 
 .flower-item:hover {
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 20px 4px;
 }
 
 .flower-item .flower-image {
   height: 220px;
+  transition: all .3s;
+}
+
+.flower-item:hover .flower-image{
+  height: 250px;
 }
 
 .flower-item .flower-image img {
@@ -787,13 +827,16 @@ p {
   .navbar .buttons i {
     margin: 0 5px;
   }
+  .hero .hero-text .infos {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 576px) {
-  .flower-item .flower-image{
+  .flower-item .flower-image {
     height: 160px;
   }
-  .flower-item .flower-info{
+  .flower-item .flower-info {
     height: 150px;
   }
 }
