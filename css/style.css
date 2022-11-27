@@ -277,6 +277,30 @@
   font-size: 23px;
 }
 
+.hero .hero-icons{
+  position: fixed;
+  bottom: 30px;
+  right: 80px;
+ z-index: 11;
+}
+
+.hero .hero-icons a i{
+ font-size: 35px;
+ margin: 0 6px;
+ color: rgba(195, 107, 132, 0.9);
+ padding: 10px;
+ background: rgba(255, 255, 255, 0.8);
+ box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+ backdrop-filter: blur(7px);
+ border-radius: 6px;
+ transition: all .3s;
+}
+
+.hero .hero-icons a i:hover{
+  font-size: 40px;
+}
+
+
 /* HERO END */
 
 /* ABOUT COMPANY START */
@@ -810,6 +834,9 @@ p {
   .testimonial-item .testimonial-text {
     text-align: center;
     padding: 20px;
+  }
+  .hero .hero-icons{
+    display: none;
   }
 }
 
